@@ -1,0 +1,112 @@
+/*////////////////////
+// Positioning items    
+//////////////////////
+
+Reset *
+Display: inline vs block
+https://www.w3schools.com/cssref/pr_class_display.asp
+
+Box-sizing
+https://www.w3schools.com/css/css3_box-sizing.asp
+
+Using percentages and max-width
+https://www.w3schools.com/cssref/css_units.asp
+
+Float and clear
+https://www.w3schools.com/cssref/pr_class_float.asp
+
+Flexbox - https://www.w3schools.com/css/css3_flexbox.asp
+
+Absolute/Relative positioning
+https://www.w3schools.com/cssref/pr_class_position.asp
+  
+Centering
+https://www.w3schools.com/css/css_align.asp
+
+*/
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.topnav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-items: flex-start;
+    color: maroon;
+    margin-bottom: 0.5em;
+}
+
+#search {
+    align-self: flex-end;
+    top: 2%;
+    border-color: maroon;
+    border-radius: 0.5em;
+    text-align: center;
+}
+
+.topnav>li {
+    list-style-type: none;
+    margin-right: 2em;
+    top: 10%;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-height: 15em;
+    flex-direction: row;
+    background-color: green;
+    color: white;
+    margin-bottom: 3em;
+    overflow: hidden;
+}
+
+#triangle-bottomleft {
+    margin: 0;
+    position: absolute;
+    left: 40%;
+    border-bottom: 15em solid green;
+    border-right: 12em solid transparent;
+}
+
+header>img {
+    align-self: flex-end;
+    width: 60%;
+    transform: scaleX(-1);
+}
+
+header>p {
+    justify-self: center;
+}
+
+.description {
+    width: 30em;
+    display: flex;
+    align-self: center;
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.listofrestaurants {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: auto;
+    margin-bottom: 3em;
+}
+
+#box {
+    border-style: dashed;
+    border-color: maroon;
+    border-radius: 1em;
+    background-color: lightgray;
+    width: 25em;
+    height: 15em;
+}
